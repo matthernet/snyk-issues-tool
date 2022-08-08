@@ -4,7 +4,7 @@
 
 CLI tool that uses the Snyk API to get orgs and issue count sort by severity
 
-The tool requires a valid Snyk API_KEY, please read the documentation about it [Authentication for API](https://docs.snyk.io/snyk-api-info/authentication-for-api)
+The tools require a valid Snyk **API_KEY**, please read the documentation about it [Authentication for API](https://docs.snyk.io/snyk-api-info/authentication-for-api)
 
 ## Examples
 
@@ -23,7 +23,18 @@ Org_name6 : abcd1234-abcd-1234-abcd-abcdef123456
 
 
 Modify the ```get-issues.py``` file and add the names and IDs from the orgs that you want to get the issues count in the ```CLUSTERS_ID``` list:
+```
+CLUSTERS_ID = {
+    "Org_name1" : "1234abcd-1234-abcd-1234-123456abcdef",
+    "Org_name2" : "abcd1234-abcd-1234-abcd-abcdef123456",
+    "Org_name3" : "1234abcd-1234-abcd-1234-123456abcdef",
+    "Org_name4" : "abcd1234-abcd-1234-abcd-abcdef123456",
+    "Org_name5" : "1234abcd-1234-abcd-1234-123456abcdef",
+    "Org_name6" : "abcd1234-abcd-1234-abcd-abcdef123456",
+}
+```
 
+Run ```get-issues.py``` and get the issues count sort by organization and severity:
 ``` bash
 # python3 get-issues.py
 
