@@ -1,4 +1,4 @@
-# snyk-issues-tool
+# Snyk issues tool
 
 <img align="right" src="https://snyk.io/style/asset/logo/snyk-print.svg">
 
